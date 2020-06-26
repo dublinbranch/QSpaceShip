@@ -1,2 +1,2 @@
 # QSpaceShip
-Just a bunch of <=> for Qt Types, expect logica error!
+Just a bunch of <=> for Qt Types, expect logical error!
