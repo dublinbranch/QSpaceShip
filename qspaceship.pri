@@ -5,3 +5,6 @@ HEADERS += \
 
 DISTFILES += /
 	$$PWD/README.md
+
+SOURCES += \
+	$$PWD/implementation.cpp
