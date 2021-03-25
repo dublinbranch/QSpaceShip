@@ -1,9 +1,7 @@
-#ifndef QHOSTADDR_SPCS
-#define QHOSTADDR_SPCS
+#pragma once
+
+#include <QHostAddress>
 
 std::strong_ordering operator<=>(const QHostAddress& lhs, const QHostAddress& rhs) {
 	return lhs.toIPv4Address() <=> rhs.toIPv4Address();
 }
-
-
-#endif // SITECHECK_H

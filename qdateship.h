@@ -1,5 +1,7 @@
 #pragma once
 
+#include <QDate>
+
 std::strong_ordering operator<=>(const QDate& lhs, const QDate& rhs) {
 	if (lhs < rhs) {
 		return std::strong_ordering::less;
