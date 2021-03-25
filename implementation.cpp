@@ -1,6 +1,5 @@
 #include "qdateship.h"
 #include <QDate>
-#include <QHostAddress>
 #include <QString>
 
 std::strong_ordering operator<=>(const QDate& lhs, const QDate& rhs) {
@@ -11,10 +10,6 @@ std::strong_ordering operator<=>(const QDate& lhs, const QDate& rhs) {
 	} else { //(c > 0)
 		return std::strong_ordering::greater;
 	}
-}
-
-std::strong_ordering operator<=>(const QHostAddress& lhs, const QHostAddress& rhs) {
-	return lhs.toIPv4Address() <=> rhs.toIPv4Address();
 }
 
 std::strong_ordering operator<=>(const QString& lhs, const QString& rhs) {
