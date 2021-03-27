@@ -7,9 +7,9 @@ DISTFILES += /
 
 SOURCES += \
 	$$PWD/implementation.cpp 
-
-packagesExist(QtNetwork) {
-    DEFINES += HAS_QT_NETWORK
+ 
+defined(HAS_QT_NETWORK, var) {
+    message("NARF is not defined.")
 	HEADERS += $$PWD/qhostaddress.h 
 	SOURCES += $$PWD/qhostaddress.cpp 
 }
